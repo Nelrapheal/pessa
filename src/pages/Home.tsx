@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { ArrowRight, Atom, Globe2, Microscope, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, Atom, Globe2, ArrowUpRight } from 'lucide-react';
 import Section from '../components/ui/Section';
 import { motion } from 'framer-motion';
 
