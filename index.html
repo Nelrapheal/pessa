@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>P.E.S.S.A | Faculty of Physical & Earth Sciences</title>
+    <meta name="description" content="Exploring matter, energy, and the planet." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+            colors: {
+              pessa: {
+                black: '#1A1C20',
+                offwhite: '#F8F7EB',
+                teal: '#1E917D',
+                coral: '#CD5B43',
+                stone: '#ADA596',
+                graphite: '#464645',
+                dept: {
+                  physics: '#1E917D',
+                  chemistry: '#CD5B43',
+                  geo: '#1A7F6B',
+                  marine: '#2FA4A9',
+                  math: '#1A1C20',
+                  stats: '#464645',
+                }
+              }
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F8F7EB;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ADA596;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1E917D;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F8F7EB] text-[#1A1C20] antialiased selection:bg-[#1E917D] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
