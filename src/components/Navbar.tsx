@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
                 isScrolled ? 'text-[#ADA596]' : 'text-[#464645]'
               }`}
             >
-              University of Lagos
+              Univ. of Lagos
             </span>
           </div>
         </NavLink>
