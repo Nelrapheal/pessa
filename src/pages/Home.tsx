@@ -133,7 +133,7 @@ const Home: React.FC = () => {
           </div>
           <div className="md:col-span-7 space-y-6 text-[#464645] text-lg">
             <p>
-              The Faculty of Physical and Earth Sciences is a cornerstone of scientific advancement at the University of Lagos. We combine theoretical understanding with practical application across six specialized departments.
+              The Faculty of Physical and Earth Sciences is a cornerstone of scientific advancement at the University of Lagos. We combine theoretical understanding with practical application across five specialized departments.
             </p>
             <p>
               From understanding the quantum mechanics governing the subatomic world to exploring the geological processes shaping our planet, PESSA creates an environment where students innovate, research, and lead.
