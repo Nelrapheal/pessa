@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+9import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
@@ -53,7 +53,7 @@ const Navbar: React.FC = () => {
                 isScrolled ? 'text-[#ADA596]' : 'text-[#464645]'
               }`}
             >
-              Univ. of Lagos
+              University of Lagos
             </span>
           </div>
         </NavLink>
