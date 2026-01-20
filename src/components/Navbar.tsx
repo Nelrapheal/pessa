@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { Menu, X, Atom } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { NAV_ITEMS } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { NavItem } from '../types';
+import logo from '../assets/Untitled design.png';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -11,9 +12,7 @@ const Navbar: React.FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 20);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -38,7 +37,7 @@ const Navbar: React.FC = () => {
               isScrolled ? 'bg-[#1E917D]' : 'bg-[#1A1C20]'
             }`}
           >
-            <Atom size={24} className={isScrolled ? 'text-white' : 'text-[#1E917D]'} />
+            <img src={logo} alt="P.E.S.S.A Logo" className="w-7 h-7 object-contain" />
           </div>
 
           <div className="flex flex-col">
@@ -79,7 +78,6 @@ const Navbar: React.FC = () => {
             </NavLink>
           ))}
 
-          {/* Student Portal Button */}
           <a
             href="https://studentportal.unilag.edu.ng/login"
             target="_blank"
@@ -96,7 +94,7 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Toggle */}
         <button
-          onClick={() => setIsMobileOpen(!isMobileOpen)}
+          onClick={() => setIsMobileOpen((v) => !v)}
           className={`md:hidden p-2 rounded-md ${
             isScrolled ? 'text-[#F8F7EB]' : 'text-[#1A1C20]'
           }`}
@@ -131,7 +129,6 @@ const Navbar: React.FC = () => {
                 </NavLink>
               ))}
 
-              {/* Mobile Student Portal Button */}
               <a
                 href="https://studentportal.unilag.edu.ng/login"
                 target="_blank"

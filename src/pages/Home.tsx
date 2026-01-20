@@ -1,8 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { ArrowRight, Atom, Globe2, ArrowUpRight } from 'lucide-react';
+import { ArrowRight, Atom, ArrowUpRight } from 'lucide-react';
 import Section from '../components/ui/Section';
 import { motion } from 'framer-motion';
+import logo from '../assets/Untitled design.png';
 
 const Home: React.FC = () => {
   return (
@@ -64,10 +65,13 @@ const Home: React.FC = () => {
             transition={{ duration: 1.2, delay: 0.2 }}
             className="relative h-[500px] w-full hidden lg:flex items-center justify-center"
           >
-            {/* Central Planet / Atom Core */}
-            <div className="relative w-64 h-64 bg-gradient-to-tr from-[#1E917D] to-[#2FA4A9] rounded-full shadow-2xl flex items-center justify-center z-20">
-               <div className="absolute inset-2 border border-white/20 rounded-full" />
-               <Globe2 size={80} className="text-white opacity-80 animate-pulse-slow" />
+            {/* Central Planet / Atom Core with Logo */}
+            <div className="relative w-64 h-64 bg-white rounded-full shadow-2xl flex items-center justify-center z-20 overflow-hidden">
+               <img 
+                 src={logo} 
+                 alt="P.E.S.S.A Logo" 
+                 className="w-full h-full object-cover"
+               />
             </div>
 
             {/* Orbiting Elements */}
