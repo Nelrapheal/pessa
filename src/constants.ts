@@ -44,17 +44,6 @@ export const DEPARTMENTS: Department[] = [
     headOfDept: 'Prof. Lukumon Adeoti'
   },
   {
-    id: 'marine',
-    name: 'Marine Sciences',
-    color: '#2FA4A9',
-    iconName: 'Waves',
-    description: 'The study of marine ecosystems, ocean processes, and coastal environments that support global ecological balance.',
-    courses: ['Oceanography', 'Marine Biology', 'Fisheries Science', 'Aquatic Ecology'],
-    research: ['Marine Pollution & Conservation', 'Coastal Dynamics', 'Sustainable Fisheries'],
-    careers: ['Marine Biologist', 'Oceanographer', 'Environmental Consultant', 'Conservation Scientist'],
-    headOfDept: 'Prof. Ikenna Charles Onyema'
-  },
-  {
     id: 'mathematics',
     name: 'Mathematics',
     color: '#1A1C20',
