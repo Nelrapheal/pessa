@@ -109,7 +109,7 @@ const Home: React.FC = () => {
       <div className="border-y border-[#ADA596]/30 bg-white">
         <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { label: 'Departments', value: '06' },
+            { label: 'Departments', value: '05' },
             { label: 'Academic Staff', value: '120+' },
             { label: 'Active Students', value: '2.5k' },
             { label: 'Research Labs', value: '18' }
